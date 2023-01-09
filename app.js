@@ -64,7 +64,7 @@ app.post("/failure", function(req, res) {
 
 // process.env.PORT is a dynamic port
 app.listen(process.env.PORT || 3000, function(){
-  console.log("Server running at port 3000")
+  console.log("Server running")
 });
 
 //583c6ef5d1866066044e07baa890e3e9-us18
