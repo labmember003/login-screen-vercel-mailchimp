@@ -7,6 +7,11 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+app.use("/", (req, res) => {
+  res.json({message: "Hellosss"});
+});
+
+
 app.get("/", function(req,res) {
     res.sendFile(__dirname + "/index.html")
 });
